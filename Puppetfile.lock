@@ -1,7 +1,9 @@
-FORGE
-  remote: https://forgeapi.puppetlabs.com
+GIT
+  remote: git://github.com/maestrodev/puppet-wget
+  ref: master
+  sha: 1e25bfeccfeecac0b8762af47a445c97e5df8810
   specs:
-    maestrodev-wget (1.7.0)
+    maestrodev-wget (1.7.1)
 
 DEPENDENCIES
   maestrodev-wget (>= 0)
