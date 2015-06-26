@@ -1,6 +1,7 @@
 class appledeth::user {
   user { 'jspc':
     ensure => present,
+    managehome => true,
   }
 
   file { '/home/jspc/projects':
