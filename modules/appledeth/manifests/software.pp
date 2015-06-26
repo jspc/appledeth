@@ -27,5 +27,6 @@ class appledeth::software {
   package { 'thunderbird': ensure => 'present'}
   package { 'tmux': ensure => 'present'}
   package { 'xterm': ensure => 'present'}
-  package { 'modejs': ensure => 'present'}
+  package { 'nodejs': ensure => 'present'}
+  package { 'htop': ensure => 'present'}
 }
