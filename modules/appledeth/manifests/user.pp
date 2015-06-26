@@ -57,21 +57,24 @@ class appledeth::user {
     destination => '/home/jspc/.bashrc',
     timeout => 0,
     verbose => false,
-    execuser => 'jspc'
+    execuser => 'jspc',
+    redownload => true,
   }
 
   wget::fetch { 'https://raw.githubusercontent.com/jspc/homedir/master/.bash_profile':
     destination => '/home/jspc/.bash_profile',
     timeout => 0,
     verbose => false,
-    execuser => 'jspc'
+    execuser => 'jspc',
+    redownload => true,
   }
 
   wget::fetch { 'https://raw.githubusercontent.com/jspc/homedir/master/.status':
     destination => '/home/jspc/.status',
     timeout => 0,
     verbose => false,
-    execuser => 'jspc'
+    execuser => 'jspc',
+    redownload => true,
   }
 
 }
