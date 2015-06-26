@@ -1,7 +1,11 @@
 class appledeth::software {
+  # touchpad
+  package { 'xf86-input-synaptics': ensure => 'present'}
+
   # DM/ X/ Whatevs
   package { 'lightdm': ensure => 'present'}
   package { 'lightdm-gtk-greeter': ensure => 'present'}
+  package { 'xorg-server': ensure => 'present'}
   package { 'xorg-server-xephyr': ensure => 'present'}
   service { 'lightdm.service': enable => true}
 
@@ -23,4 +27,5 @@ class appledeth::software {
   package { 'thunderbird': ensure => 'present'}
   package { 'tmux': ensure => 'present'}
   package { 'xterm': ensure => 'present'}
+  package { 'modejs': ensure => 'present'}
 }
