@@ -83,6 +83,7 @@ class appledeth::user {
     verbose => false,
     execuser => 'jspc',
     redownload => true,
+    mode => '0700',
   }
 
   wget::fetch { 'https://raw.githubusercontent.com/jspc/homedir/master/.bashables/git-completion':
@@ -91,6 +92,7 @@ class appledeth::user {
     verbose => false,
     execuser => 'jspc',
     redownload => true,
+    mode => '0700',
   }
 
 }
