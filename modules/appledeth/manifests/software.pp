@@ -1,6 +1,7 @@
 class appledeth::software {
   # DM/ X/ Whatevs
   package { 'lightdm': ensure => 'present'}
+  package { 'lightdm-gtk-greeter': ensure => 'present'}
   package { 'xorg-server-xephyr': ensure => 'present'}
   service { 'lightdm.service': enable => true}
 
