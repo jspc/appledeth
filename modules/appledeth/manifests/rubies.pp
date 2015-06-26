@@ -2,14 +2,14 @@ class appledeth::rubies {
   vcsrepo { '/home/jspc/.rbenv':
     ensure => 'present',
     provider => 'git',
-    source => 'https://github.com/sstephenson/rbenv.git'
+    source => 'https://github.com/sstephenson/rbenv.git',
     user => 'jspc',
   }
 
   vcsrepo { '/home/jspc/.rbenv/plugins/ruby-build':
     ensure => 'present',
     provider => 'git',
-    source => 'https://github.com/sstephenson/ruby-build.git'
+    source => 'https://github.com/sstephenson/ruby-build.git',
     user => 'jspc',
   }
 
