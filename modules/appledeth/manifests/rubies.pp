@@ -13,6 +13,10 @@ class appledeth::rubies {
     user => 'jspc',
   }
 
+  file { '/home/jspc/.after_homedir':
+    ensure => 'present',
+  }
+
   file_line { 'rbenv Pathery':
     path => '/home/jspc/.after_homedir',
     line => 'export PATH="$HOME/.rbenv/bin:$PATH"',
