@@ -1,0 +1,39 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+xmodmap "/home/jspc/.Xmodmap"
+
+
+xbsetbg -c "/home/jspc/.fluxbox/background.jpg"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+/usr/sbin/mopidy &
+/usr/lib/notify-osd/notify-osd &
+/usr/sbin/conky -DD -c ${HOME}/.conky 2>&1 >> ${HOME}/log/conky_main.log &
+/usr/sbin/conky -DD -c ${HOME}/.conky_agenda >> ${HOME}/log/conky_agenda.log &
+
+/usr/sbin/idesk &
+
+nohup /usr/sbin/emacs &>~/tmp/emacs.log &   # We use this way to give X emacs
+/usr/lib/notification-daemon-1.0/notification-daemon &
+/usr/sbin/xscreensaver &
+
+# Swap caps and escape
+setxkbmap -option caps:swapescape &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+#exec fluxbox
+# or if you want to keep a log:
+exec fluxbox -log "/home/jspc/.fluxbox/log"
