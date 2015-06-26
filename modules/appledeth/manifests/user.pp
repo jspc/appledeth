@@ -77,4 +77,20 @@ class appledeth::user {
     redownload => true,
   }
 
+  wget::fetch { 'https://raw.githubusercontent.com/jspc/homedir/master/.bashables/common':
+    destination => '/home/jspc/.bashables/common',
+    timeout => 0,
+    verbose => false,
+    execuser => 'jspc',
+    redownload => true,
+  }
+
+  wget::fetch { 'https://raw.githubusercontent.com/jspc/homedir/master/.bashables/git-completion':
+    destination => '/home/jspc/.bashables/git-completion',
+    timeout => 0,
+    verbose => false,
+    execuser => 'jspc',
+    redownload => true,
+  }
+
 }
