@@ -6,7 +6,7 @@ class appledeth::emacs {
 
   file { '/home/jspc/.emacs':
     ensure => 'present',
-    user => 'jspc',
+    owner => 'jspc',
     group => 'jspc',
     mode => '0600',
     source => 'puppet:///modules/appledeth/emacs',
