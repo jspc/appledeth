@@ -25,6 +25,7 @@ class appledeth::fluxbox {
 
   exec { 'fluxbox-generate_menu':
     user => 'jspc',
+    cwd => '/home/jspc',
   }
 
 }

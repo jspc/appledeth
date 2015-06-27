@@ -29,6 +29,7 @@ class appledeth::software {
   package { 'nginx': ensure => 'present'}
   package { 'nodejs': ensure => 'present'}
   package { 'notify-osd': ensure => 'present'}
+  package { 'openssh': ensure => 'present'}
   package { 'strace': ensure => 'present'}
   package { 'thunderbird': ensure => 'present'}
   package { 'tmux': ensure => 'present'}
