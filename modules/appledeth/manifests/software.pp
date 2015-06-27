@@ -33,5 +33,6 @@ class appledeth::software {
   package { 'strace': ensure => 'present'}
   package { 'thunderbird': ensure => 'present'}
   package { 'tmux': ensure => 'present'}
+  package { 'unclutter': ensure => 'present'}
   package { 'xterm': ensure => 'present'}
 }
