@@ -23,7 +23,7 @@ class appledeth::conky {
     ensure => 'present',
     owner => 'jspc',
     group => 'jspc',
-    mode => '0600',
+    mode => '0700',
     source => 'puppet:///modules/appledeth/conky-weather',
   }
 
