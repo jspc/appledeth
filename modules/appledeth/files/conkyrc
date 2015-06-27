@@ -43,7 +43,7 @@ ${alignc}${execi 300 /home/jspc/.conky/3.weathers.sh "EU|GB|EN|LONDON|"}
 ${font Sans:bold:size=15}
 Kernel: $kernel         ${alignr}Uptime: $uptime
 Frequency: ${alignr}$freq_g GHz
-Battery: ${alignr} ${battery_bar 10,300,BAT1} ${battery_percent BAT1}%
+Battery: ${alignr} ${battery_bar 10,300 BAT1} ${battery_percent BAT1}%
 
 ${alignc}CPU Cores:
 
