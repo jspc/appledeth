@@ -4,7 +4,7 @@ class appledeth::emacs {
     source => 'puppet:///modules/appledeth/emacs.tar.bz2',
   }
 
-  exec { 'tar xf /tmp/emacs.tar.bz2 -C /home/jspc':
+  exec { '/usr/bin/tar xf /tmp/emacs.tar.bz2 -C /home/jspc':
     user => 'jspc',
     creates => '/home/jspc/.emacs',
   }
