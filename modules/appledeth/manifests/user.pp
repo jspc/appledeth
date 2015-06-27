@@ -53,6 +53,13 @@ class appledeth::user {
     mode => '0700',
   }
 
+  file { '/home/jspc/log':
+    ensure => 'directory',
+    owner => 'jspc',
+    group => 'jspc',
+    mode => '0700',
+  }
+
   wget::fetch { 'https://raw.githubusercontent.com/jspc/homedir/master/.bashrc':
     destination => '/home/jspc/.bashrc',
     timeout => 0,
