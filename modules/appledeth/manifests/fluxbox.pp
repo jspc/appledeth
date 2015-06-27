@@ -23,9 +23,4 @@ class appledeth::fluxbox {
     source => 'puppet:///modules/appledeth/ibm.jpg',
   }
 
-  exec { '/usr/bin/fluxbox-generate_menu':
-    user => 'jspc',
-    cwd => '/home/jspc',
-  }
-
 }
